@@ -13,7 +13,7 @@ var rd1 = document.getElementById('text'); // displaying message
 var rb = document.getElementById('reg');
 var rb2 = document.getElementById('Showbtn');
 function textBtnClicked (){
-    alert("me")
+    // alert("me")
     console.log(textinputElem.value)
 
     // var regTag = document.querySelector("input[name = 'myRadio']:checked");
