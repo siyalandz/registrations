@@ -1,0 +1,27 @@
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  background-color: skyblue
+
+}
+.mbuliso {
+text-align: center;
+font-size: medium;
+}
+.maqhosha{
+    text-align: center;
+}
+.ndawo{
+    text-align: center;
+    background-color: 
+}
+.Hello{
+    text-align: center; 
+}
