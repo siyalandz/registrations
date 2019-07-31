@@ -1,4 +1,4 @@
-describe("RegNumbers", function()
+describe("RegNumbers", function(){
 let myObj= regFactory();
 it('should be able add registration of CA in the list of CApe Town', function(){
    myObj.addReg [ 'CA', 'CL', 'CJ' ]
