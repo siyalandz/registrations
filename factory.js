@@ -1,58 +1,38 @@
-function regFactory() {
+function FactoryReg() {
     var regList = [];
 
-    // define a function that will take a array of registrations
-        // It must take one parameter maybe call it regNumbers
-        // Use a map or array
-        // difine a array that will restrict reg codes only for cape Town 
-            // let regCodes = ["CA", "CL","CJ", "CY"];
-        // inside the Map 
-            // check if the reg is not there, add reg
-            // 
-// function regCheck(regNumbers){
-//     let regCode = ["CA", "CL","CJ",];
-//     return regCode;
-// }if(regCode){}
-
     function addReg(reg) {
-console.log(addReg)
-       regList.push(reg);
+        
+        regList.push(reg);
     }
 
-    function getList(){
-        return regList
+    function getList() {
+    return regList
     }
-    
-function Filter(location){
-    for (var i=0; i< regList.length; i++){
-        if(regList[i].startsWith(location)){
-        getList.push(reg[i]);
-        } 
-}}
-    //create a filter function
-    //loop through your reglist
-    //get all towns in the respective towns
-    function display(){
-        return reg;
+
+    function filter(towns) {
+        console.log(towns);
+        var newList = [];
+        for (var i = 0; i < regList.length; i++) {
+            let currentReg = regList[i];
+            if (currentReg.startsWith(towns)) {
+                newList.push(currentReg);
+            }
+        }
+        return newList;
+    }
+   
+
+    function getRegN() {
+        return regN;
     }
 
     return {
         addReg,
         getList,
-        Filter,
-        display
+        filter,
+        getRegN
     }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-

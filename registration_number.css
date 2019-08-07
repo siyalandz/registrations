@@ -8,10 +8,11 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
-  background-color: skyblue
+  background-color: green
 
 }
 .mbuliso {
+font-size: 80%;
 text-align: center;
 font-size: medium;
 }
@@ -20,8 +21,19 @@ font-size: medium;
 }
 .ndawo{
     text-align: center;
-    background-color: 
+
 }
 .Hello{
     text-align: center; 
+}
+li {
+    list-style-type: none;
+     border: solid black;
+     border-radius:15%;
+     background:yellow;
+     padding: 15px; 
+     width: 4em;
+     height: 0.5px; 
+    
+    
 }
