@@ -2,7 +2,7 @@ function FactoryReg() {
     var regList = [];
 
     function addReg(reg) {
-        
+        // need to do some kind of check before adding
         regList.push(reg);
     }
 

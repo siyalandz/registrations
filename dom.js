@@ -1,5 +1,5 @@
 var elemReg = document.querySelector(".reg");
- var textinputElem = document.querySelector(".regDigits");
+var textinputElem = document.querySelector(".regDigits");
 var ListElem = document.querySelector('.list');
 var reDigitsElem = document.querySelector('.regNumbers');
 var addtoListlElem = document.querySelector('.getList');
@@ -9,10 +9,10 @@ var textBtnElem = document.querySelector('.textBtnClicked');
 var addbtnElem = document.querySelector('.addbtn');
 var showbtnElem = document.querySelector('.showbtn');
 var display = document.querySelector(".display");
- var era = document.querySelector('errorText');
+var era = document.querySelector('errorText');
 
 
- var myfactory = FactoryReg()
+var myfactory = FactoryReg()
 
 function textBtnClicked() {
    var number = document.createElement("li");
@@ -23,8 +23,14 @@ function textBtnClicked() {
 
 
 function showbtnClicked() {
-var townTag = document.querySelector("input[name = 'myRadio']:checked");
-   var list = myfactory.filter(townTag.value)
+
+   display.innerHTML = "";
+   var townTag = document.querySelector("input[name = 'myRadio']:checked");
+   
+   var list = [];
+   list = myfactory.filter(townTag.value)
+   console.log(list);
+   
    for (let i = 0; i < list.length; i++) {
       const element = list[i];
       var number = document.createElement("li");
@@ -32,7 +38,7 @@ var townTag = document.querySelector("input[name = 'myRadio']:checked");
       display.appendChild(number);
    }
 
-  
+
 }
 
 
